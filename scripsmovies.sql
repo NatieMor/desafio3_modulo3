@@ -16,7 +16,8 @@ SELECT pelicula, "Año estreno" FROM peliculas WHERE "Año estreno" BETWEEN 1990
 
 SELECT LENGTH (pelicula) as longitud_titulo from peliculas; --requerimiento número 7
 
-SELECT LENGTH (pelicula) as longitud_titulo from peliculas order by longitud_titulo desc; --requerimiento número 8
+SELECT LENGTH (pelicula) as longitud_titulo from peliculas order by longitud_titulo desc;--requerimiento número 8
+SELECT MAX(LENGTH(titulo)) FROM peliculas; --RESPUESTA CORRECTA PARA EL NUMERO 8
 
 TRUNCATE peliculas, reparto  RESTART IDENTITY;-- requerimiento numero 2 del desafio.
 
